@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="user">
+    <input type="text" id="pwd">
+    <button  onclick="login1()">Login</button>
+
+    <script>
+
+            var chance =0 ;
+            var max = 3;
+
+        function login1() {
+            var userN = "ujayaweera738@gmail.com";
+            var pwdd = "1234";
+           
+
+            var user = document.getElementById("user").value;
+            var pwd = document.getElementById("pwd").value;
+
+            if (user === userN && pwd === pwdd) {
+                alert("Successfully");
+            } else {
+                chance++;
+
+                if (chance === max) {
+                    alert("Your Account locked");
+                } 
+            }
+        }
+    </script>
+</body>
+</html>

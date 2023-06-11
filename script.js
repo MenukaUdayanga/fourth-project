@@ -69,22 +69,187 @@
 
 
 
-    function login1(){
+    // function login1(){
 
+    //     var userN = "ujayaweera738@gmail.com";
+    //     var pwdd = "1234";
+
+    //     var user = document.getElementById("user").value;
+    //     var pwd = document.getElementById("pwd").value;
+
+    //     if(user==userN & pwd==pwdd ){
+
+    //         alert("Login is Successfully")
+    //     }
+
+    //     else{
+
+    //         alert("Try agin")
+    //     }
+
+    // }
+
+
+    // function login1(){
+
+
+    //     var userN = "ujayaweera738@gmail.com";
+    //     var pwdd = "1234";
+    //     var chance = 1;
+    //     var attempt= 3;
+        
+
+    //     var user = document.getElementById("user").value;
+    //     var pwd = document.getElementById("pwd").value;
+
+       
+
+    //         if(user==userN & pwd==pwdd){
+
+    //            alert("Successfully");
+    //         }
+
+    //         else {
+
+    //             chance = chance++;
+               
+    //             if(chance===attempt){
+                
+    //             alert("Your Accout locked");  }
+
+    //             else {
+
+    //                 alert("Wrong Login"); 
+    //             }
+
+               
+    //         }
+
+
+    //     }
+
+
+            var userN = "ujayaweera738@gmail.com";
+            var pwdd = "1234";
+            var chance = 0;
+            var attempt = 3;
+
+    function login1() {
+       
+      
         var user = document.getElementById("user").value;
         var pwd = document.getElementById("pwd").value;
+      
+        if (user === userN && pwd === pwdd) {
+          alert("Successfully");
+        } else {
+         
+            chance++;
+            
+         
+            if(chance<attempt){
 
-        if(user=="ujayaweera738@gmail.com" & pwd=="1234" ){
+                alert("Your Login is wrong");
+                clearInput();
+                
+            }
 
-            alert("Login is Successfully")
+            else {
+                alert("Your accout is locked");
+
+            }
+
+
         }
+      }
 
-        else{
+      function clearInput(){
 
-            alert("Try agin")
+        var user = document.getElementById("user").value="";
+        var pwd = document.getElementById("pwd").value="";
+
+
+      }
+      
+
+            
+
+
+    
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+    function see() {
+        var month = document.getElementById("bb").value;
+      
+        switch (month) {
+          case "January":
+            alert("Month is January");
+            break;
+          case "February":
+            alert("Month is February");
+            break;
+          case "March":
+            alert("Month is March");
+            break;
+          case "April":
+            alert("Month is April");
+            break;
+          default:
+            alert("Data not found");
         }
+      }
 
-    }
+
+    //   var i = 4;
+
+    //   var i = i+=5;
+
+    //   console.log(i);
+
+
+      for( var i= 0; i<5; i+=2){
+
+        console.log("ok");
+      }
+
+
+    //   var mysq = 5;
+
+    //   for(var i=0; i<6; i++ ){
+
+    //     if(mysq%2==0)
+    //   }
+      
+    
+
+   
 
  
 
